@@ -75,6 +75,12 @@
 \setlength{\parindent}{1.3cm}
 \setlength\afterchapskip{\baselineskip}
 \setlength{\parskip}{0.0cm}
+\setlength{\onelineskip}{0.2cm}
+
+
+
+
+
 
 \usepackage{indentfirst}          % primeira paragrafo identado
 \hypersetup{colorlinks=false,     % Retira o retangulo vermelho nos hyperlinks
@@ -397,10 +403,9 @@ pdfborder={0 0 0},}               %
 
 % SUMARIO ==========================================
 \newcommand\samepagechapter{
-                   %\thispagestyle{plain}%
                     \global\@topnum\z@
                     \@afterindentfalse
-                    \secdef\@chapter\@schapter}
+                    \secdef\@chapter\@schapter}%
 
 \setcounter{tocdepth}{3}
 \newif\if@aftertoc
@@ -410,6 +415,8 @@ pdfborder={0 0 0},}               %
   \thispagestyle{empty}
   \vspace{0.4\baselineskip}
   \@starttoc{toc}\@aftertoctrue%
+  \newpage\
+  \thispagestyle{empty}
 }
 
 \renewcommand{\cftdot}{.}
