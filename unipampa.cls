@@ -120,13 +120,13 @@ pdfborder={0 0 0},}               %
         \abntex@ifnotempty{\@chaveA}{1. \@chaveA. }%
         \abntex@ifnotempty{\@chaveB}{2. \@chaveB. }%
         \abntex@ifnotempty{\@chaveC}{3. \@chaveC. }
-        \abntex@ifnotempty{\@chaveD}{2. \@chaveD. }%
-        \abntex@ifnotempty{\@chaveE}{2. \@chaveE. }%
-        \abntex@ifnotempty{\@chaveF}{2. \@chaveF. }%
-        \abntex@ifnotempty{\@chaveG}{2. \@chaveG. }%
-        \abntex@ifnotempty{\@chaveH}{2. \@chaveH. }%
-        \abntex@ifnotempty{\@chaveI}{2. \@chaveI. }%
-        \abntex@ifnotempty{\@chaveJ}{2. \@chaveJ. }}
+        \abntex@ifnotempty{\@chaveD}{4. \@chaveD. }%
+        \abntex@ifnotempty{\@chaveE}{5. \@chaveE. }%
+        \abntex@ifnotempty{\@chaveF}{6. \@chaveF. }%
+        \abntex@ifnotempty{\@chaveG}{7. \@chaveG. }%
+        \abntex@ifnotempty{\@chaveH}{8. \@chaveH. }%
+        \abntex@ifnotempty{\@chaveI}{9. \@chaveI. }%
+        \abntex@ifnotempty{\@chaveJ}{10. \@chaveJ. }}
 % Imprime as palavras chaves
 \newcommand{\imprimirpalavraschavesR}{%
         \abntex@ifnotempty{\@chaveA}{\@chaveA. }%
@@ -402,6 +402,7 @@ pdfborder={0 0 0},}               %
 % ===============================================================================================
 
 % SUMARIO ==========================================
+
 \newcommand\samepagechapter{
                     \global\@topnum\z@
                     \@afterindentfalse
@@ -432,3 +433,21 @@ pdfborder={0 0 0},}               %
 \newcommand*{\cftsubsubsubsectionleader}{\bfseries\cftdotfill{\cftsubsubsubsectiondotsep}}
 \renewcommand\cftchapterformatpnum{\bfseries}
 % FIM SUMARIO ================================================================================
+
+\setlength{\cftchapternumwidth}{1.5cm}
+\setlength{\cftsectionnumwidth}{1.5cm}
+\setlength{\cftsubsectionnumwidth}{1.5cm}
+\setlength{\cftsubsubsectionnumwidth}{1.5cm}
+
+\setlength{\cftchapterindent}{1.3cm}
+\setlength{\cftsectionindent}{1.3cm}
+\setlength{\cftsubsectionindent}{1.3cm}
+\setlength{\cftsubsubsectionindent}{1.3cm}
+
+\renewcommand{\cftsectionformatpnum}[1]{\textbf{#1}}
+\renewcommand{\cftsubsectionformatpnum}[1]{\textbf{#1}}
+\renewcommand{\cftsubsubsectionformatpnum}[1]{\textbf{#1}}
+
+% AJUSTE DE REFERENCIAS ======================================================================
+
+% ============================================================================================ 
