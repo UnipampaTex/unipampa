@@ -388,6 +388,7 @@ pdfborder={0 0 0},}               %
 }{\end{description} \newpage\ \clearpage} %FIM LISTA DE ABREVIATURAS
 % ===============================================================================================
 
+\newcommand{\simbol}[2]{#1 & -- & #2 \\}
 % Lista de Simbolos ================================================================
 \renewenvironment{simbolos}{%
     \cleardoublepage
@@ -397,8 +398,9 @@ pdfborder={0 0 0},}               %
      \DoubleSpacing
     \end{center}
     \SingleSpacing
-    \begin{description}[font=\textnormal]
-}{\end{description}\newpage\ \clearpage} %FIM LISTA DE Simbolos
+    \begin{enumerate}[labelsep=1cm]%[font=\textnormal]
+    
+}{\end{enumerate}\newpage\ \clearpage} %FIM LISTA DE Simbolos
 % ===============================================================================================
 
 % SUMARIO ==========================================
@@ -434,20 +436,29 @@ pdfborder={0 0 0},}               %
 \renewcommand\cftchapterformatpnum{\bfseries}
 % FIM SUMARIO ================================================================================
 
-\setlength{\cftchapternumwidth}{1.5cm}
-\setlength{\cftsectionnumwidth}{1.5cm}
-\setlength{\cftsubsectionnumwidth}{1.5cm}
-\setlength{\cftsubsubsectionnumwidth}{1.5cm}
+%\setlength{\cftchapternumwidth}{1.5cm}
+%\setlength{\cftsectionnumwidth}{1.5cm}
+%\setlength{\cftsubsectionnumwidth}{1.5cm}
+%\setlength{\cftsubsubsectionnumwidth}{1.5cm}
 
-\setlength{\cftchapterindent}{1.3cm}
-\setlength{\cftsectionindent}{1.3cm}
-\setlength{\cftsubsectionindent}{1.3cm}
-\setlength{\cftsubsubsectionindent}{1.3cm}
+%\setlength{\cftchapterindent}{1.3cm}
+%\setlength{\cftsectionindent}{1.3cm}
+%\setlength{\cftsubsectionindent}{1.3cm}
+%\setlength{\cftsubsubsectionindent}{1.3cm}
 
 \renewcommand{\cftsectionformatpnum}[1]{\textbf{#1}}
 \renewcommand{\cftsubsectionformatpnum}[1]{\textbf{#1}}
 \renewcommand{\cftsubsubsectionformatpnum}[1]{\textbf{#1}}
 
+
+
 % AJUSTE DE REFERENCIAS ======================================================================
+\renewenvironment{quote}{%
+\SingleSpacing
+\hspace{.2\textwidth}\begin{minipage}{.7\textwidth}
+\footnotesize
+}{%
+\end{minipage}
+\\}
 
 % ============================================================================================ 
