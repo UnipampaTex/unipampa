@@ -13,7 +13,7 @@
 %% 
 %% The Current Maintainer of this work is: 
 %%      Patrick Rogger Garcia, patrick_rooger@hotmail.com
-%%      Vinicius Abreu de Oliveira, viniciusoliveira@unipampa.edu.br
+%%      Vinicius de Abreu Oliveira, viniciusoliveira@unipampa.edu.br
 %% Further information about abnTeX2 are available on http://abntex2.googlecode.com/
 %%
 
