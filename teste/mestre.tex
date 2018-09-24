@@ -172,98 +172,11 @@
 \OnehalfSpacing             % Ajusta o texto para 1.5 entre linhas
 % =============================================================================
 
-\chapter{INTRODUÇÃO}
+\include{cap1}
+\include{cap2}
+\include{cap3}
+\include{cap4}
     
-     O método geofísico \index{magnetotelúrico}, utiliza as baixas frequências do espectro eletromagnético, para investigar a subsuperfície do planeta Terra. A interação do vento solar com o campo magnético terrestre, compõe a origem dessas ondas eletromagnéticas.  
-    
-    A grande complexidade dos dados desestimula o desenvolvimento de para o processamento dos mesmos. Atualmente os programas destinados a esse tipo de atividade são proprietários,\cite{cagniard1953basic} com alto valor comercial, ou são livres operacionais exclusivamente por linhas de comando.  
-    
-    A comunidade MTnet, mantém laços com diversos pesquisados na área do MT, e reúne as aplicações destinadas aos processamentos, tais como:  de pré-processamento, inversão, tratamento estatísticos, dentre outros. Os programas alocados no MTnet são de uso livre e destinados a comunidade acadêmica.
-    
-%    \begin{figure}[H]
-%        \caption{Modelo de Aquisição para ADU.}
-%        \begin{center}
-%         \includegraphics[width=10cm]{fig/ADU_MODELO.png}
-%        \end{center}
-%        \legend{\Fonte{\oautor}}
-%    \end{figure}
-     O método geofísico \index{magnetotelúrico}, utiliza as baixas frequências do espectro eletromagnético, para investigar a subsuperfície do planeta Terra. A interação do vento solar com o campo magnético terrestre, compõe a origem dessas ondas eletromagnéticas.
-     
-%     \begin{figure}[htp]
-%        \caption{Modelo de Aquisição para ADU}
-%        \begin{center}
-%         \includegraphics[width=10cm]{fig/ADU_MODELO.png}
-%        \end{center}
-%        \legend{\Fonte{\oautor}}
-%    \end{figure}
-
-    \section{Uma secção}
-        vamos colocar um equação beta aqui 
-        
-        \begin{equation}
-         V = d^2
-        \end{equation}
-        
-        vamos citar o marcelo kkkkk \cite{padua2004estudos}
-
-    
-    \subsection{Uma subsection}
-    \subsubsection{UMA SUBSUSBUSBSECÇÃO}
-
-
-    \chapter{EXEMPLO DE TABELA}
-    
-    aqui vamos colocar algumas tabelas
-    
-    \begin{table}[htb]
-        \IBGEtab{%
-            \caption{Um Exemplo de tabela alinhada conforme IBGE}%
-        \label{tabela-ibge}
-        }{%
-            \normalsize
-            \begin{tabular}[]{cp{1cm}cp{1cm}c}
-             \toprule
-             Nome &\qquad & Nascimento & \qquad& Documento \\
-                  &            &            \\
-             \midrule 
-             Maria da Silva && 11/11/11 && 111.111.111 \\
-             Maria da Silva && 11/11/11 && 111.111.111 \\
-             Maria da Silva && 11/11/11 && 111.111.111 \\
-             Maria da Silva && 11/11/11 && 111.111.111 \\
-             \\
-             \bottomrule
-            \end{tabular}%
-        }{%
-            \Fonte{\oautor}%
-        }
-    \end{table}
-
-    \chapter{Outro capitulo}
-    
-    \begin{table}[htb]
-        \IBGEtab{%
-            \caption{Um Exemplo de tabela alinhada conforme IBGE}%
-            \label{tabela-ibge2}
-        }{%
-            \normalsize
-            \begin{tabular}[]{cp{1cm}cp{1cm}c}
-             \toprule
-             Nome &\qquad & Nascimento & \qquad& Documento \\
-                  &            &            \\
-             \midrule 
-             Maria da Silva && 11/11/11 && 111.111.111 \\
-             Maria da Silva && 11/11/11 && 111.111.111 \\
-             Maria da Silva && 11/11/11 && 111.111.111 \\
-             Maria da Silva && 11/11/11 && 111.111.111 \\
-             \\
-             \bottomrule
-            \end{tabular}%
-        }{%
-            \Fonte{\oautor}%
-        }
-    \end{table}
-    \chapter{qualquer um}
-        \index{magnetotelúrico}
 
 % ==============================================================================
 
@@ -282,19 +195,19 @@
  
 % APÊNDICE
 % ==============================================================================
-\apendices                      % Inicia os apêndices
+\apendices  
 
-\chapter{Codigo fonte}
-    Conteudo do apendice A
+\include{apA}                    % Inicia os apêndices
+
 % ==============================================================================
 
 
 % ANEXO
 % ==============================================================================
-\anexos                         % Inicia os anexos
+\anexos 
 
-\chapter{Amigem para mostrar}
-    Um anexo
+\include{an1}                        % Inicia os anexos
+
 % ==============================================================================
 
     
